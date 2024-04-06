@@ -1,0 +1,97 @@
+/* :root{
+    --ragaccvladi: #fff
+} */
+
+/* responsive_div{
+    background-color: red;
+    height: 600px;
+    width: 600px;
+}
+@media screen and (max-width:800px) {
+    .responsive_div{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .responsive_div{
+        background-color: yellow;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.flex_responsive{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.flex_responsive div{
+    width: 300px;
+    background-color: red;
+    height: 300px;
+}
+@media screen and (max-width:1200px) {
+    .flex_responsive{
+        flex-direction: column;
+    }
+    .flex_responsive div{
+        width: 80%;
+    }
+} */
+
+input:required{
+    border: 3px solid red;
+}
+a[target='_blank']{
+    color: red;
+}
+input[type='password']{
+    border: 1px solid blue;
+    /* border: 1px solid (var(--ragaccvladi)); */
+}
+[title~='ragac']{
+    color: red;
+}
+
+.maximum_width{
+    width: calc(100vw - 16px);
+    height: 100px;
+    background-color: red;
+    font-size: 30px;
+    transform: rotate(calc(30deg*3));
+}
+.transition_btn{
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background: rgb(13,7,7);
+    background: linear-gradient(90deg, rgba(13,7,7,1) 0%, rgba(95,100,100,1) 15%, rgba(202,217,206,1) 34%, rgba(100,7,7,1) 44%, rgba(8,108,53,0.5354516806722689) 49%, rgba(9,9,121,1) 58%, rgba(8,139,54,1) 61%, rgba(151,6,163,1) 69%, rgba(4,122,196,1) 80%, rgba(3,154,217,1) 87%, rgba(229,192,2,1) 91%, rgba(0,212,255,1) 100%);
+    padding: 10px 15px;
+    width: 200px;
+}
+.transition_btn:hover{
+    width: 4000px;
+    transform: rotate(90deg);
+    background: rgb(229,2,2);
+    background: linear-gradient(90deg, rgba(229,2,2,1) 10%, rgba(2,229,108,1) 32%, rgba(74,125,217,1) 51%, rgba(157,115,115,1) 70%, rgba(229,192,2,1) 91%, rgba(0,212,255,1) 100%);
+    transition: all 60s ease-in-out;
+}
+@keyframes saxeli{
+0%{
+    background-color: red;
+}
+50%{
+    background-color: yellow;
+}
+100%{
+    background-color: blue;
+}
+}
+.animaciistvis{
+    animation: saxeli;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
